@@ -3,10 +3,12 @@ body {
     color: rgb(112, 65, 36);
     max-width: 1200px;
     margin: auto;
-}
-    
+}    
 header {
-    display: flex;
-    height: 20vh;
+    display: flex;    
     justify-content: space-between;
+    align-items:end
+}
+#logo {
+    max-height:;
 }
