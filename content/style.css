@@ -1,0 +1,12 @@
+body {
+    background-color: #d2e4c9;
+    color: rgb(112, 65, 36);
+    max-width: 1200px;
+    margin: auto;
+}
+    
+header {
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+}

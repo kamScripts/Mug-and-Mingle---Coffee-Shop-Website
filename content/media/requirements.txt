@@ -1,0 +1,36 @@
+
+You have been approached by a local specialty coffee shop, Mug and
+Mingle which is looking to expand its online presence. The shop
+specialises in a niche market within the coffee industry. They pride
+themselves on offering high-quality products that cater to coffee
+enthusiasts who are passionate about unique coffee experiences.
+Mug and Mingle wants to expand its online presence with a website
+that reflects a unique blend of quality products and vibrant
+community spirit. The owner envisions a site that showcases the
+shop’s premium offerings and highlights the social events and
+gatherings that make it a special place for regulars and newcomers.
+Your task is to design and develop a fully functional website that
+meets the needs of Mug and Mingle. The website should be user-
+friendly, accessible, and demonstrate your ability to use semantic
+HTML and modern CSS practices effectively.
+Assignment Task
+Website Structure and Content
+Pages
+Home Page
+Provide an engaging introduction to the coffee shop, featuring
+key information and highlighted products.
+About Us
+Include details about the history and mission of the coffee shop.
+Use appropriate HTML markup for any abbreviations and
+acronyms.
+Products
+Create a page showcasing the coffee products with detailed
+descriptions. Ensure images have accessible attributes and
+semantic HTML is used.
+Events
+Offer informative content on events taking place locally. Use
+HTML5 markup for any quotations and instructional content.
+Contact Us
+Implement an accessible HTML form for customer inquiries.
+Ensure the form uses the correct attributes and tags for
+functionality.
