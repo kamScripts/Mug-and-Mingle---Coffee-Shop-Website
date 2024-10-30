@@ -1,14 +1,35 @@
+:root {
+    --main-font-color: rgb(112, 65, 36);
+    --background-color: #d2e4c9;
+}
 body {
-    background-color: #d2e4c9;
-    color: rgb(112, 65, 36);
+
+    background-color: var(--background-color);
+    color: var(--main-font-color);
     max-width: 1200px;
     margin: auto;
+    
 }    
 header {
+    padding: 1rem;
     display: flex;    
     justify-content: space-between;
-    align-items:end
+    align-items:center
 }
-#logo {
-    max-height:;
+
+nav  {
+    display: flex;
+    
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+nav > a {    
+    
+}
+    
+a:link, a:visited {
+    
+    color: var(--main-font-color);   
+    text-align: center;
+    text-decoration: none;
 }
