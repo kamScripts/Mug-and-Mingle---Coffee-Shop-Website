@@ -1,22 +1,16 @@
 :root {
     --main-font-color: rgb(29, 21, 1);
     --background-color: #96af87;
-    --border-value: #b0caa1 solid 4px;
+    --border-value: 4px solid #b0caa1;
     --light-color: #b0caa1; 
-}
-
-    
+}   
 
 body {       
     background-color: var(--background-color);
     color: var(--main-font-color);
     max-width: 1200px;
-    height: 100vh;
     margin: auto;
-    text-align: center;
-
-
-    
+    text-align: center;   
 }
     
 header {    
@@ -28,22 +22,53 @@ header {
 main {    
     display: grid;
     grid-template-columns: 2fr 1fr;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#aboutArticle{    
 
+}
+
+#aboutArticle, .gallery, .gallery > article{  
     padding: 1rem;
 }
-.gallery {
+#contact  {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#eventsTable {
+    margin: auto;      
+    border: var(--border-value);    
+    
+}
+#eventHead > tr, #eventBody > tr {
+    background-color: var(--light-color);
+}
+#eventHead > tr > td, #eventBody > tr > td {
+    width: 100px;
 }
 
+
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+.gallery > img {
+    max-width: 120px;
+    max-height: 200px;
+}
+.gallery > article {
+    max-width: 260px;
+}
+article > ul {
+    list-style:circle;
+}
+
+
 .aboutPictures {
-    max-height: 400px;
+    max-height: 500px;
     border-radius: 1rem;
 }
- 
 
 
 aside > article{
@@ -54,6 +79,13 @@ aside > article{
     border: var(--border-value);
     border-bottom-left-radius: 2rem;
 
+}
+aside > article:nth-of-type(1) {
+
+}
+aside > article:nth-of-type(2) {
+    position: sticky;
+    top:300px
 }
 article > button {
     background-color: var(--background-color);
@@ -83,13 +115,33 @@ a:link, a:visited {
 
 footer {
     font-weight: bolder;
-    margin-top: 2rem;
+    margin: 2rem;
     text-align: center;
 
  }
+ #proposal {
+    max-width: 200px;
+ }
+
+ fieldset {    
+    margin: auto;
+    padding: 1rem;
+    max-width: 300px;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr;
+
+ }
+ label {
+    justify-self: left;
+ }
+ #submitButton {
+    margin: auto;
+    width: 100px;
+ }
 
 
-@media (width <= 800px){
+@media (width <= 600px){
 
     header{
         align-items: center;
@@ -102,7 +154,7 @@ footer {
     #highlights {
         width: fit-content;
     }
-    .gallery {
+    .aboutGallery {
         flex-direction: column;
         
     }
