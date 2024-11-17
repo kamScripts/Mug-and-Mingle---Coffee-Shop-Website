@@ -48,7 +48,9 @@ aside > button {
     background-color: var(--background-color);
     border: #f0f0f0 solid 2px;
     border-radius: .5rem;
-
+}
+aside > button:hover {
+    background-color: #b0caa1;
 }
 nav  {    
     display: flex;    
