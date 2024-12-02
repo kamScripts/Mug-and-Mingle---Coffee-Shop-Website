@@ -3,9 +3,6 @@
     --background-color: #96af87;
     --border-color: #effce7;
 }
-
-    
-
 body {     
     background-color: var(--background-color);
     color: var(--main-font-color);
@@ -19,6 +16,7 @@ body {
 }
     
 header { 
+    padding: 1rem;
     display: flex;    
     justify-content: space-between;
     align-items:end
@@ -46,7 +44,9 @@ blockquote, #author{
     padding: .2rem;
     
 }
-
+#logo {
+    width: 200px;
+}
 
 #author {
     text-align: right;
@@ -66,6 +66,7 @@ aside > button {
     border: var(--border-color) solid 2px;
     border-radius: .5rem;
     margin: .5rem;
+    padding: .5rem;
 }
 aside > button:hover {
     background-color: #b0caa1;
@@ -74,6 +75,7 @@ nav  {
     display: flex;    
     gap: 1rem;
     flex-wrap: wrap;
+    font-size: 1.5rem;
 }
 
 nav > a:hover {    
