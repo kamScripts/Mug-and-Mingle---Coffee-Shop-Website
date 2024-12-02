@@ -36,17 +36,20 @@ article {
 #text {
     flex-shrink: 2;
 }
-#text > section {
+#text > div {
     min-height: 400px;
     background: right url(./media/pexels-rquiros-1727123scale.jpg);
     border-radius: 1rem;   
 
 
 }
-blockquote, section > p {
-    
+blockquote, #author{
     background-color: #f0f0f085;
+    padding: .2rem;
+    
 }
+
+
 #author {
     text-align: right;
 }

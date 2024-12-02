@@ -62,6 +62,7 @@ main {
 }
 article > ul {
     list-style:circle;
+    text-align: left;
 }
 
 
