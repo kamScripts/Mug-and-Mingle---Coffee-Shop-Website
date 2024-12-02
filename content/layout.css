@@ -1,7 +1,7 @@
 :root {
     --main-font-color: rgb(29, 21, 1);
     --background-color: #96af87;
-    --border-value: 4px solid #b0caa1;
+    --border-value: 4px solid #effce7;
     --light-color: #b0caa1; 
 }   
 
@@ -17,7 +17,7 @@ header {
     padding: 1rem;
     display: flex;    
     justify-content: space-around;
-    align-items: baseline
+    align-items: baseline;
 }
 main {    
     display: grid;
@@ -83,12 +83,17 @@ aside > article:nth-of-type(2) {
 }
 article > button {
     background-color: var(--background-color);
-    border: #f0f0f0 solid 2px;
+    border: var(--border-value);
     border-radius: .5rem;
+    margin-bottom: .5rem;
+    
 
 }
 article > button:hover {
     background-color: var(--light-color);
+}
+table > caption {
+    margin: 1rem;
 }
 nav  {    
     display: flex;    
@@ -126,6 +131,7 @@ footer {
     grid-template-columns: 1fr;
 
  }
+
  label {
     justify-self: left;
  }

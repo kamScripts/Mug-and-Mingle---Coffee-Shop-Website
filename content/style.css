@@ -1,12 +1,12 @@
 :root {
     --main-font-color: rgb(29, 21, 1);
     --background-color: #96af87;
+    --border-color: #effce7;
 }
 
     
 
 body {     
-    
     background-color: var(--background-color);
     color: var(--main-font-color);
     max-width: 1200px;
@@ -19,10 +19,9 @@ body {
 }
     
 header {      
-    padding: 1rem;
     display: flex;    
     justify-content: space-around;
-    align-items: baseline
+    align-items:end
 }
 main {    
     display: flex;
@@ -30,8 +29,7 @@ main {
 }
 article {
     text-align: center;
-    padding: 1rem;
-    
+    padding: 1rem;    
 }
 #text {
     flex-shrink: 2;
@@ -57,33 +55,34 @@ blockquote, #author{
 
 aside {
     text-align: center;
-    margin: .5rem;
     padding: .5rem;
-    border: #b0caa1 solid 4px;
+    border: var(--border-color) solid 4px;
     border-bottom-left-radius: 2rem;
+    align-self: center;
 
 }
 aside > button {
     background-color: var(--background-color);
-    border: #f0f0f0 solid 2px;
+    border: var(--border-color) solid 2px;
     border-radius: .5rem;
+    margin: .5rem;
 }
 aside > button:hover {
     background-color: #b0caa1;
 }
-nav  {    
+nav  {      
     display: flex;    
     gap: 1rem;
     flex-wrap: wrap;
 }
+
 nav > a:hover {    
     color: rgb(2, 0, 0);
     font-weight: bold;
-}
-    
+}    
 a:link, a:visited {    
     color: var(--main-font-color);
-    border-bottom: #b0caa1 solid 4px;   
+    border-bottom: var(--border-color) solid 4px;   
     text-align: center;
     text-decoration: none;
 }
@@ -100,17 +99,19 @@ a:link, a:visited {
     overflow-y: scroll;          
 }
 .highlightsContainer {
-   border: var(--background-color) solid 2px;
+   border: var(--border-color) solid 2px;
    border-radius: .5rem;
    padding: .5rem;
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: center;
     
 }
-
 .highlightsContainer:hover {
     background-color: #7b9c68;
     
+}
+figcaption {
+    margin-left: 1rem;
 }
 footer {
     font-weight: bolder;
