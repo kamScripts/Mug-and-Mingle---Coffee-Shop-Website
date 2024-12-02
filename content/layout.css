@@ -22,12 +22,8 @@ header {
 main {    
     display: grid;
     grid-template-columns: 2fr 1fr;
-
 }
 
-#aboutArticle, .gallery, .gallery > article{  
-    padding: 1rem;
-}
 #contact  {
     display: flex;
     flex-direction: column;
@@ -75,8 +71,7 @@ article > ul {
 aside > article{
     max-width: 200px;
     text-align: center;
-    margin: .5rem;
-    
+    margin: .5rem;    
     border: var(--border-value);
     border-bottom-left-radius: 2rem;
 
@@ -158,6 +153,10 @@ footer {
     .aboutGallery {
         flex-direction: column;
         
+    }
+    #aboutText > p {
+        max-width: 90vw;
+        margin: auto;
     }
 
 }
