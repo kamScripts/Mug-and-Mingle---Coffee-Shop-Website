@@ -23,8 +23,25 @@ header {
 }
 main {    
     display: flex;
-    align-items: baseline;
+    align-items: end;
 }
+
+nav > ul {
+    display: flex;
+
+    margin:0 auto;
+    padding-left: 0;
+}
+li {
+    font-size: larger;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+
+
+}    
+
 article {
     text-align: center;
     padding: 1rem;    
@@ -71,11 +88,9 @@ aside > button {
 aside > button:hover {
     background-color: #b0caa1;
 }
-nav  {      
-    display: flex;    
-    gap: 1rem;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
+nav  { 
+    border-top: var(--border-color) solid 4px;    
+    border-bottom: var(--border-color) solid 4px;
 }
 
 nav > a:hover {    
@@ -84,8 +99,7 @@ nav > a:hover {
 }    
 a:link, a:visited {    
     color: var(--main-font-color);
-    border-bottom: var(--border-color) solid 4px;   
-    text-align: center;
+       
     text-decoration: none;
 }
 .smallPics {
