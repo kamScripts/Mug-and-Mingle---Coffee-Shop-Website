@@ -96,7 +96,7 @@ blockquote, #author{
 
 
 aside {
-    align-self: flex-start;
+    
     display: flex;
     flex-direction: column;
 
@@ -181,6 +181,7 @@ footer {
         flex-direction: column;
     }
     main {
+        margin: 0 auto;
         display: grid;               
         grid-template-areas:
         "a a a"
@@ -212,7 +213,7 @@ footer {
     main {
         display: flex;
         flex-direction: column;
-        align-items: center;
+
     }
     #homeAside, #eventAside {
         margin-top: 1rem;
