@@ -1,14 +1,14 @@
 
 .mainClass {    
-    display: grid;    
+    display: grid;   
     grid-template-areas:
      "textA textA asideA"
      "gall gall asideA";
 }
 .main2Columns {
     display: flex;
-    justify-content: center; 
-    align-items: center;   
+    justify-content: space-around; 
+    align-items: flex-start;   
     gap: .5rem;
 }
 #contactMain {
@@ -33,6 +33,10 @@ h1 {
 .aside2 {
     grid-area: asideA;
     align-self: center;
+}
+#productAside {
+    position: sticky;
+    top: 300px;
 }
 #contact  {
     display: flex;
@@ -69,10 +73,7 @@ article > ul {
     max-height: 250px;    
     border-radius: 1rem;
 }
-#productsAside {
-    position: sticky;
-    top:300px
-}
+
 article > button {
     background-color: var(--background-color);
     border: var(--border-value);

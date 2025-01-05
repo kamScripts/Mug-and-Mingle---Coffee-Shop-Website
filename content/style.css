@@ -94,14 +94,6 @@ blockquote, #author{
     text-align: right;
 }
 
-
-aside {
-    
-    display: flex;
-    flex-direction: column;
-
-    
-}
 #homeAside {
     align-self: flex-end;
 }
@@ -109,16 +101,14 @@ aside > div:first-of-type {
     box-sizing: content-box;
     margin-bottom: 1rem;
 }
-.sideBox {    
-    text-align: center;
-    padding: .1rem;
+
+.sideBox {          
+    text-align: center;    
     margin-bottom: .5rem;
     border: var(--border-navbar);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 200px;
-
+ 
 }
 
 .sidePics {
@@ -130,6 +120,7 @@ aside > div:first-of-type {
     border: var(--border-navbar);
     border-radius: .5rem;
     font-size: 1.2rem;   
+    margin: .5rem;
 }
 a:link, a:visited {    
     color: var(--main-font-color);       
