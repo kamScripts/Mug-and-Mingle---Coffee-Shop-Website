@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content/style.css">
     <link rel="stylesheet" href="content/layout.css">
     <title>MugAndMingle</title>
 </head>
 <body>
-    <header id="head">        
-        <img src="content/media/logo.png" alt="Mug and Mingle logo" id="logo">
-        
-        <nav >
-            <a href="index.html">Home Page</a>
-            <a href="about.html">About Us</a>
-            <a href="products.html">Products</a>
-            <a href="events.html">Events</a>
-            <a href="contact.html">Contact</a>
-
+    <header >        
+        <img src="content/media/logo.png" alt="Mug and Mingle logo" class="logo">        
+        <nav class="navTopBar">
+            <ul class="navList">
+                <li><a href="index.html" class="navBttn">Home</a></li>
+                <li><a href="about.html" class="navBttn">About</a></li>
+                <li><a href="products.html" class="navBttn">Products</a></li>
+                <li><a href="events.html" class="navBttn">Events</a></li>
+                <li><a href="contact.html" class="navBttn">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <main id="products">
+    <main class="main2Columns">
         <article id="aboutArticle">
             <h1>Products</h1>        
                 <section class="gallery">
@@ -96,8 +97,9 @@
                 </section>
 
         </article>
-        <aside>
-            <article>
+
+        <aside id="productsAside">
+            <article class="sideBox">
                 <table>
                     <legend>week schedule</legend>
                     <thead>
@@ -138,20 +140,21 @@
                     </tbody>
                 </table>
             </article>
-            <article>
+            <article class="sideBox">
                 <h3> Order or book a table</h3>
-                <button>order</button>
-                <button>book</button>
+                <div>
+                    <button class="bttns">order</button>
+                    <button class="bttns">book</button>
+                </div>
             </article>
         </aside>
     </main>
     <footer>
-        <section>
+        <figure class="linkContainer">
             <a href="https://github.com/kamScripts/">
-            <img src="content/media/github-mark.svg" alt="github-mark" height="24px">
+            <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
             kamScripts</a>
-        </section>
-
+        </figure>
     </footer>
 </body>
 </html>

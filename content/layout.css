@@ -1,33 +1,46 @@
-:root {
-    --main-font-color: rgb(29, 21, 1);
-    --background-color: #96af87;
-    --border-value: 4px solid #effce7;
-    --light-color: #b0caa1; 
-}   
 
-body {       
-    background-color: var(--background-color);
-    color: var(--main-font-color);
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;   
+.mainClass {    
+    display: grid;    
+    grid-template-areas:
+     "textA textA asideA"
+     "gall gall asideA";
 }
+.main2Columns {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    gap: .5rem;
+}
+#contactMain {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
     
-header {    
-    padding: 1rem;
-    display: flex;    
-    justify-content: space-around;
-    align-items: baseline;
 }
-main {    
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.abutText {
+    grid-area: textA;
 }
+h1 {
+    text-align: center;
+}
+.aboutGallery {
+    grid-area: gall;
+    display: flex;
+    justify-content: center;   
+}
+.aside2 {
+    grid-area: asideA;
+    align-self: center;
+}
+
 
 #contact  {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 #eventsTable {
     margin: auto;      
@@ -64,22 +77,18 @@ article > ul {
 
 
 .aboutPictures {
-    max-height: 500px;
+    max-height: 250px;    
     border-radius: 1rem;
 }
-#logo {
-    width: 200px;
-}
 
-aside > article{
+.aside2 > article{
     max-width: 200px;
     text-align: center;
     margin: .5rem;    
     border: var(--border-value);
     border-bottom-left-radius: 2rem;
-
 }
-aside > article:nth-of-type(2) {
+#productsAside {
     position: sticky;
     top:300px
 }
@@ -92,38 +101,14 @@ article > button {
     
 
 }
-article > button:hover {
-    background-color: var(--light-color);
-}
 table > caption {
     margin: 1rem;
 }
-nav  {    
-    display: flex;    
-    gap: 1rem;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
-}
-nav > a:hover {    
-    color: rgb(2, 0, 0);
-    font-weight: bold;
-}
-    
-a:link, a:visited {    
-    color: var(--main-font-color);
-    border-bottom: var(--border-value);   
-    text-align: center;
-    text-decoration: none;
-}
-
-footer {
-    font-weight: bolder;
-    margin: 2rem;
-    text-align: center;
-
- }
  #proposal {
     max-width: 200px;
+ }
+ h3 {
+    text-align: center;
  }
 
  fieldset {    
@@ -145,30 +130,25 @@ footer {
  }
 
 
-@media (width <= 600px){
+@media (width <= 850px){
 
-    header{
-        align-items: center;
+
+    .mainClass {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    main{
-        grid-template-columns: 1fr;
-        justify-items: center;
+    .aside2 {
+        flex-direction: row;
     }
+
     #highlights {
         width: fit-content;
     }
-    .aboutGallery {
-        flex-direction: column;
-        
-    }
-    #aboutText > p {
-        max-width: 90vw;
-        margin: auto;
-    }
 
 }
-@media (width <= 500px) {
+@media (width <= 570px) {
+
     .aboutPictures {
         width: 200px;
     }

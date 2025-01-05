@@ -1,7 +1,12 @@
 :root {
     --main-font-color: rgb(29, 21, 1);
     --background-color: #96af87;
-    --border-color: #effce7;
+    --border-navbar: #effce7 solid 4px;
+    --light-color: #b0caa1; 
+}
+* {
+    box-sizing: border-box;
+
 }
 body {     
     background-color: var(--background-color);
@@ -18,36 +23,56 @@ body {
 header { 
     padding: 1rem;
     display: flex;    
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:end
 }
 main {    
-    display: flex;
+    display: flex;    
     align-items: end;
+    padding: 1rem
+}
+.navTopBar  { 
+    border-top: var(--border-navbar);
+    border-right: var(--border-navbar);     
+    border-bottom: var(--border-navbar);
 }
 
-nav > ul {
-    display: flex;
-
-    margin:0 auto;
-    padding-left: 0;
-}
-li {
-    font-size: larger;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: .5rem;
-
-
+.navTopBar > a:hover {    
+    color: rgb(2, 0, 0);
+    font-weight: bold;
 }    
 
-article {
-    text-align: center;
-    padding: 1rem;    
+
+.navList {
+    display: flex;
+    margin:0 auto;
+    padding-left: 0;
+    font-size: 1.3rem;
+    list-style: none;
+}
+.navBttn {    
+    font-size: larger;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+    
+
+
+}
+.navBttn:hover,
+.bttns:hover {
+    background-color: #b0caa1;
+}    
+
+#highs {
+    
+    margin:0 .5rem;
+    flex-shrink: 1.5;
+ 
 }
 #text {
-    flex-shrink: 2;
+    text-align: center;
+    
 }
 #text > div {
     min-height: 400px;
@@ -61,7 +86,7 @@ blockquote, #author{
     padding: .2rem;
     
 }
-#logo {
+.logo {
     width: 200px;
 }
 
@@ -71,35 +96,43 @@ blockquote, #author{
 
 
 aside {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+#homeAside {
+    align-self: flex-end;
+}
+aside > div:first-of-type {    
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+}
+.sideBox {    
     text-align: center;
-    padding: .5rem;
-    border: var(--border-color) solid 4px;
-    border-bottom-left-radius: 2rem;
-    align-self: center;
+    padding: .1rem;
+    margin-bottom: .5rem;
+    border: var(--border-navbar);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
 
 }
-aside > button {
+
+.sidePics {
+    height: 200px;
+    width: 250px;
+}
+.bttns {
     background-color: var(--background-color);
-    border: var(--border-color) solid 2px;
+    border: var(--border-navbar);
     border-radius: .5rem;
-    margin: .5rem;
-    padding: .5rem;
+    font-size: 1.2rem;   
 }
-aside > button:hover {
-    background-color: #b0caa1;
-}
-nav  { 
-    border-top: var(--border-color) solid 4px;    
-    border-bottom: var(--border-color) solid 4px;
-}
-
-nav > a:hover {    
-    color: rgb(2, 0, 0);
-    font-weight: bold;
-}    
 a:link, a:visited {    
-    color: var(--main-font-color);
-       
+    color: var(--main-font-color);       
     text-decoration: none;
 }
 .smallPics {
@@ -115,9 +148,9 @@ a:link, a:visited {
     overflow-y: scroll;          
 }
 .highlightsContainer {
-   border: var(--border-color) solid 2px;
+   border: var(--border-navbar);
    border-radius: .5rem;
-   padding: .5rem;
+   padding: .2rem;
    display: flex;
    align-items: center;
     
@@ -127,26 +160,64 @@ a:link, a:visited {
     
 }
 figcaption {
-    margin-left: 1rem;
+    text-align: center;
+    margin-left: .5rem;
+    font-size: 1.1rem;
 }
 footer {
     font-weight: bolder;
-    margin: 2rem;
-    text-align: center;
-
+    margin: 0 auto;
+ }
+ .linkContainer {
+    display: flex;
+    align-items: center;
  }
 
-@media (width <= 600px){
+@media (width <= 850px){
 
-    header, main {
-        margin: .5rem;
+    #head{
+        margin: .5rem auto;
         align-items: center;
         flex-direction: column;
+    }
+    main {
+        display: grid;               
+        grid-template-areas:
+        "a a a"
+        "b b c";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+    #text {
+        grid-area: a;
+    }
+    #highs {
+        grid-area: b;
+    }
+    aside {
+        grid-area: c
     }
     #highlights {
         width: fit-content;
     }
+}
+@media (width <= 550px) {
+    header {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        
 
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #homeAside, #eventAside {
+        margin-top: 1rem;
+        align-self: center;
+    }
 }
 
 

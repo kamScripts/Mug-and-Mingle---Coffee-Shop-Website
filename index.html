@@ -8,19 +8,19 @@
 </head>
 <body>
     <header id="head">        
-        <img src="content/media/logo.png" alt="Mug and Mingle logo" id="logo">        
-        <nav >
-            <ul>
-                <a href="index.html"><li>Home Page</li></a>
-                <a href="about.html"><li>About Us</li></a>
-                <a href="products.html"><li>Products</li></a>
-                <a href="events.html"><li>Events</li></a>
-                <a href="contact.html"><li>Contact</li></a>
+        <img src="content/media/logo.png" alt="Mug and Mingle logo" class="logo">        
+        <nav class="navTopBar">
+            <ul class="navList">
+                <li><a href="index.html" class="navBttn">Home</a></li>
+                <li><a href="about.html" class="navBttn">About</a></li>
+                <li><a href="products.html" class="navBttn">Products</a></li>
+                <li><a href="events.html" class="navBttn">Events</a></li>
+                <li><a href="contact.html" class="navBttn">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article id="text" aria-label="Welcome section">
+        <section id="text" aria-label="Welcome section">
             <h1>Welcome to Mug and Mingle</h1>       
             <div>
                 <Blockquote cite="www.example.org">               
@@ -28,10 +28,10 @@
                 </Blockquote>
                 <p id="author">-Author, <cite>Example</cite></p>
             </div>
-        </article>
-        <article aria-label="Highlighted section">
+        </section>
+        <section id="highs" aria-label="Highlighted section">
             <h2>Popular choices:</h2>
-            <section id="highlights">
+            <article id="highlights">
                 <figure class="highlightsContainer">
                     <img class="smallPics" src="content/media/pexels-julianemonarifotografia-29359730.jpg" alt="coffee pic" >
                     <figcaption>Lorem ipsum .</figcaption>
@@ -62,21 +62,27 @@
                     <figcaption>Lorem cupidatat.</figcaption>
                     
                 </figure>
-            </section>     
-        </article>
-        <aside>
-            <h3> Order or book a table</h3>
-            <button>order</button>
-            <button>book</button>
+            </article>     
+        </section>
+        <aside id="homeAside">
+            <div class="sideBox">
+                <img class="sidePics" src="content/media/pexels-fotios-photos-1995010.jpg" alt="inside the coffee shop">
+            </div>
+            <div class="sideBox">
+                <h3> Order or book a table</h3>
+                <div>
+                    <button class="bttns">order</button>
+                    <button class="bttns">book</button>
+                </div>
+            </div>
         </aside>
     </main>
     <footer>
-        <figure>
+        <figure class="linkContainer">
             <a href="https://github.com/kamScripts/">
-            <img src="content/media/github-mark.svg" alt="github-mark" height="24px">
+            <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
             kamScripts</a>
         </figure>
-
     </footer>
 </body>
 </html>

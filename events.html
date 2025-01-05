@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content/style.css">
     <link rel="stylesheet" href="content/layout.css">
     <title>MugAndMingle</title>
 </head>
 <body>
-    <header id="head">        
-        <img src="content/media/logo.png" alt="Mug and Mingle logo" id="logo">
-        
-        <nav >
-            <a href="index.html">Home Page</a>
-            <a href="about.html">About Us</a>
-            <a href="products.html">Products</a>
-            <a href="events.html">Events</a>
-            <a href="contact.html">Contact</a>
-
+    <header >        
+        <img src="content/media/logo.png" alt="Mug and Mingle logo" class="logo">        
+        <nav class="navTopBar">
+            <ul class="navList">
+                <li><a href="index.html" class="navBttn">Home</a></li>
+                <li><a href="about.html" class="navBttn">About</a></li>
+                <li><a href="products.html" class="navBttn">Products</a></li>
+                <li><a href="events.html" class="navBttn">Events</a></li>
+                <li><a href="contact.html" class="navBttn">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
+    <main class="main2Columns">
         <article>
             <h1>Community Events</h1>
             <table id="eventsTable">
@@ -41,9 +42,9 @@
             </table>
 
         </article>
-        <aside>
+        <aside id="eventAside" >
             
-                <form action="" method="post" id="proposal">
+                <form action="" method="post" id="proposal" >
                     <legend>Event proposal</legend>
                     <fieldset>
                         <label for="proposalName">Name:</label>
@@ -53,19 +54,18 @@
                     
                         <label for="userInquiry">Event Proposal:</label>
                         <textarea rows="10" name="userInquiry" id="userInquiry"></textarea>
-                        <input id="submitButton" type="submit" value="submit">
+                        <input class="bttns" type="submit" value="submit">
                     </fieldset>
                 </form>
         </aside>
 
     </main>
     <footer>
-        <section>
+        <figure class="linkContainer">
             <a href="https://github.com/kamScripts/">
-            <img src="content/media/github-mark.svg" alt="github-mark" height="24px">
+            <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
             kamScripts</a>
-        </section>
-
+        </figure>
     </footer>
 </body>
 </html>
