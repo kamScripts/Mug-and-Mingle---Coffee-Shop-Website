@@ -7,7 +7,8 @@
     <title>MugAndMingle</title>
 </head>
 <body>
-    <header id="head">        
+    <header id="head">
+        <a href="#text" class="skipLink" tabindex="1">Skip to main content</a>       
         <img src="content/media/logo.png" alt="Mug and Mingle logo" class="logo">        
         <nav class="navTopBar">
             <ul class="navList">
@@ -20,8 +21,8 @@
         </nav>
     </header>
     <main>
-        <section id="text" aria-label="Welcome section">
-            <h1>Welcome to Mug and Mingle</h1>       
+        <section  id="text" aria-label="Welcome section" tabindex="2">
+            <h1 >Welcome to Mug and Mingle</h1>       
             <div>
                 <Blockquote cite="www.example.org">               
                 <p>"Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."</p>               
@@ -29,7 +30,7 @@
                 <p id="author">-Author, <cite>Example</cite></p>
             </div>
         </section>
-        <section id="highs" aria-label="Highlighted section">
+        <section id="highs" aria-label="Highlighted section" tabindex="3">
             <h2>Popular choices:</h2>
             <article id="highlights">
                 <figure class="highlightsContainer">
@@ -64,24 +65,29 @@
                 </figure>
             </article>     
         </section>
-        <aside id="homeAside">
+        <aside id="homeAside" >
             <div class="sideBox">
                 <img class="sidePics" src="content/media/pexels-fotios-photos-1995010.jpg" alt="inside the coffee shop">
             </div>
             <div class="sideBox">
                 <h3> Order or book a table</h3>
                 <div>
-                    <button class="bttns">order</button>
-                    <button class="bttns">book</button>
+                    <button class="bttns" tabindex="3">order</button>
+                    <button class="bttns" tabindex="4">book</button>
                 </div>
             </div>
         </aside>
     </main>
     <footer>
         <figure class="linkContainer">
-            <a href="https://github.com/kamScripts/">
+            <a href="https://github.com/kamScripts/" tabindex="5">
             <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
-            kamScripts</a>
+            <span class="linkText">kamScripts</span></a>
+        </figure>
+        <figure class="linkContainer">
+            <a href="#head" tabindex="6">
+            <img src="content/media/house-solid.svg" alt="github-mark" height="28px">
+            <span class="linkText">Top of the page</span></a>
         </figure>
     </footer>
 </body>

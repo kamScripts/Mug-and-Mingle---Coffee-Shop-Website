@@ -8,7 +8,8 @@
     <title>MugAndMingle</title>
 </head>
 <body>
-    <header >        
+    <header id="head">
+        <a href="#comEvents" class="skipLink">Skip to main content</a>        
         <img src="content/media/logo.png" alt="Mug and Mingle logo" class="logo">        
         <nav class="navTopBar">
             <ul class="navList">
@@ -22,7 +23,7 @@
     </header>
     <main class="main2Columns">
         <article>
-            <h1>Community Events</h1>
+            <h1 id="comEvents">Community Events</h1>
             <table id="eventsTable">
                 <caption>Local Events near Mug and Mingle</caption>
                 <thead id="eventHead">
@@ -45,7 +46,7 @@
         <aside id="eventAside" >
             
                 <form action="" method="post" id="proposal" >
-                    <legend>Event proposal</legend>
+                    <legend tabindex="-1">Event proposal</legend>
                     <fieldset>
                         <label for="proposalName">Name:</label>
                         <input type="text" name="proposalName" id="proposalName">
@@ -62,9 +63,14 @@
     </main>
     <footer>
         <figure class="linkContainer">
-            <a href="https://github.com/kamScripts/">
+            <a href="https://github.com/kamScripts/" >
             <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
-            kamScripts</a>
+            <span class="linkText">kamScripts</span></a>
+        </figure>
+        <figure class="linkContainer">
+            <a href="#head" >
+            <img src="content/media/house-solid.svg" alt="github-mark" height="28px">
+            <span class="linkText">Top of the page</span></a>
         </figure>
     </footer>
 </body>

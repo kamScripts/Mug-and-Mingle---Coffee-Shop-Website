@@ -9,7 +9,8 @@
     <title>MugAndMingle</title>
 </head>
 <body>
-    <header >        
+    <header id="head">
+        <a href="#aboutText" class="skipLink" tabindex="1">Skip to main content</a>        
         <img src="content/media/logo.png" alt="Mug and Mingle logo" class="logo">        
         <nav class="navTopBar">
             <ul class="navList">
@@ -22,9 +23,8 @@
         </nav>
     </header>
     <main class="mainClass">
-            <section class="aboutText">
-                <h1>About Mug and Mingle</h1>
-
+            <section class="aboutText" tabindex="2">
+                <h1 id="aboutH1">About Mug and Mingle</h1>
                 <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa
                     sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. 
                      
@@ -48,7 +48,7 @@
                     </figcaption>
                 </figure>
             </section>
-        <aside class="aside2">
+        <aside class="aside2" tabindex="3">
             <article class="sideBox">
                 <table>
                     <legend>week schedule</legend>
@@ -101,9 +101,14 @@
     </main>
     <footer>
         <figure class="linkContainer">
-            <a href="https://github.com/kamScripts/">
+            <a href="https://github.com/kamScripts/" tabindex="4">
             <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
-            kamScripts</a>
+            <span class="linkText">kamScripts</span></a>
+        </figure>
+        <figure class="linkContainer">
+            <a href="#head" tabindex="5">
+            <img src="content/media/house-solid.svg" alt="github-mark" height="28px">
+            <span class="linkText">Top of the page</span></a>
         </figure>
     </footer>
 </body>

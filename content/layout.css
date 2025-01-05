@@ -7,17 +7,47 @@
 }
 .main2Columns {
     display: flex;
-    justify-content: space-around; 
-    align-items: flex-start;   
-    gap: .5rem;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 1rem;  
+    
 }
 #contactMain {
     margin: 0 auto;
-    max-width: 800px;
+    display: grid;
+    justify-content: center;  
+    align-items: center;        
+    grid-template-areas:
+    "a a "
+    "b c"
+    "d c";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    gap: .5rem;
+    
+}
+#a {    
+    grid-area: a;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    align-items: center;
+}
+#b {
+    margin: 1rem;
+    align-self: flex-start;
+    grid-area: b;
+}
+iframe {
+    width: 400px;
+    height: 30vh;
+    border: 0;
+}
+#c {
+    align-self: center;
+    grid-area: c;
+}
+#d {
+    align-self: flex-start;
+    grid-area: d;
 }
 .abutText {
     grid-area: textA;
@@ -37,6 +67,8 @@ h1 {
 #productAside {
     position: sticky;
     top: 300px;
+    justify-self: center;
+    
 }
 #contact  {
     display: flex;
@@ -55,7 +87,9 @@ h1 {
 .gallery {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem; 
 }
 .gallery > img {
     max-width: 120px;
@@ -67,7 +101,7 @@ h1 {
 }
 article > ul {
     list-style:circle;
-    text-align: left;
+
 }
 .aboutPictures {
     max-height: 250px;    

@@ -5,21 +5,17 @@
     --light-color: #b0caa1; 
 }
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;    
 
 }
 body {     
     background-color: var(--background-color);
     color: var(--main-font-color);
-    max-width: 1200px;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
     
-}
-    
+} 
 header { 
     padding: 1rem;
     display: flex;    
@@ -27,28 +23,45 @@ header {
     align-items:end
 }
 main {    
-    display: flex;    
+    display: flex;
+    justify-content: center;    
     align-items: end;
     padding: 1rem
 }
+
 .navTopBar  { 
     border-top: var(--border-navbar);
     border-right: var(--border-navbar);     
     border-bottom: var(--border-navbar);
 }
+.skipLink {
+    position: absolute;
+    left: -10000px;
+    top: 0;    
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skipLink:focus {
+    background-color: var(--light-color);
+    position: absolute;
+    left: auto;
+    top: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: var(--border-navbar);
+    width: auto;
+    height: auto;
+  }
 
-.navTopBar > a:hover {    
-    color: rgb(2, 0, 0);
-    font-weight: bold;
-}    
 
 
 .navList {
     display: flex;
-    margin:0 auto;
-    padding-left: 0;
+    margin: auto;    
     font-size: 1.3rem;
     list-style: none;
+    padding-left: 0;  
 }
 .navBttn {    
     font-size: larger;
@@ -93,10 +106,6 @@ blockquote, #author{
 #author {
     text-align: right;
 }
-
-#homeAside {
-    align-self: flex-end;
-}
 aside > div:first-of-type {    
     box-sizing: content-box;
     margin-bottom: 1rem;
@@ -110,7 +119,6 @@ aside > div:first-of-type {
     flex-direction: column;
  
 }
-
 .sidePics {
     height: 200px;
     width: 250px;
@@ -133,21 +141,18 @@ a:link, a:visited {
 #highlights{
     background-color: #b0caa1;
     border-radius: .5rem;
-}
-#highlights{     
     max-height: 400px;    
-    overflow-y: scroll;          
+    overflow-y: scroll;
 }
 .highlightsContainer {
    border: var(--border-navbar);
    border-radius: .5rem;
    padding: .2rem;
    display: flex;
-   align-items: center;
-    
+   align-items: center;    
 }
 .highlightsContainer:hover {
-    background-color: #7b9c68;
+    background-color: #dbfadb;
     
 }
 figcaption {
@@ -156,6 +161,8 @@ figcaption {
     font-size: 1.1rem;
 }
 footer {
+    display: flex;
+    justify-content: center;
     font-weight: bolder;
     margin: 0 auto;
  }
@@ -193,6 +200,7 @@ footer {
         grid-template-rows: auto;
         grid-template-columns: auto;
     }
+
     #text {
         grid-area: a;
     }
@@ -207,16 +215,19 @@ footer {
     }
 }
 @media (width <= 550px) {
+    #productAside {
+        align-self: center;
+    }
     header {
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
-        
-
-    }
+    } 
     main {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
 
     }
     #homeAside, #eventAside {
@@ -231,9 +242,24 @@ footer {
     .aboutPictures {
         width: 200px;
     }
+    .linkText {        
+        display: none;
+    }
     iframe {
         width: 250px;
     }
 }
+@media (width <= 400px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navList {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
+
 
 

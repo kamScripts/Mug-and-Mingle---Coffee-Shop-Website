@@ -8,7 +8,8 @@
     <title>MugAndMingle</title>
 </head>
 <body>
-    <header >        
+    <header id="head"> 
+        <a href="#b" class="skipLink" tabindex="1">Skip to main content</a>       
         <img src="content/media/logo.png" alt="Mug and Mingle logo" id="logo">        
         <nav class="navTopBar">
             <ul class="navList">
@@ -20,9 +21,9 @@
             </ul>
         </nav>
     </header>
-    <main id="contactMain">
-        <article id="contact">
-            <h1>Contact Us</h1>
+    <main id="contactMain" >
+        <article class="sideBox" id="b" tabindex="3">
+            <h1 >Contact Us</h1>
             <table>
                 
                 <tbody>
@@ -45,10 +46,12 @@
 
                 </tbody>
             </table>
-            <h2>find us on the Google Maps</h2>
-            <iframe aria-label="Location on Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.589493342876!2d-2.24939640584658!3d53.488950892707756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb166cd566c59%3A0x51d3984b3d8f87ab!2sUCEN%20Manchester%20-%20City%20Campus!5e1!3m2!1spl!2suk!4v1731870663313!5m2!1spl!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
-        <aside>
+        <article class="sideBox" id="a" tabindex="2">
+            <h2>find us on the Google Maps</h2>
+            <iframe aria-label="Location on Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.589493342876!2d-2.24939640584658!3d53.488950892707756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb166cd566c59%3A0x51d3984b3d8f87ab!2sUCEN%20Manchester%20-%20City%20Campus!5e1!3m2!1spl!2suk!4v1731870663313!5m2!1spl!2suk" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        <aside id="c">
             <article class="sideBox">
                 <table>
                     <legend>week schedule</legend>
@@ -90,7 +93,7 @@
                     </tbody>
                 </table>
             </article>
-            <article class="sideBox">
+            <article class="sideBox" >
                 <h3> Order or book a table</h3>
                 <div>
                     <button class="bttns">order</button>
@@ -98,7 +101,7 @@
                 </div>
             </article>
         </aside>
-        <form action="" method="post">
+        <form action="" method="post" id="d" tabindex="4">
             <h3>Send us message</h3>
             <fieldset>
                 <label for="userEmail">User Email:</label>
@@ -113,9 +116,14 @@
     </main>
     <footer>
         <figure class="linkContainer">
-            <a href="https://github.com/kamScripts/">
+            <a href="https://github.com/kamScripts/" tabindex="5">
             <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
-            kamScripts</a>
+            <span class="linkText">kamScripts</span></a>
+        </figure>
+        <figure class="linkContainer">
+            <a href="#head" tabindex="6">
+            <img src="content/media/house-solid.svg" alt="github-mark" height="28px">
+            <span class="linkText">Top of the page</span></a>
         </figure>
     </footer>
 </body>

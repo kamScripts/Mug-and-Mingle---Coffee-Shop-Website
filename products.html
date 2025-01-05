@@ -8,7 +8,8 @@
     <title>MugAndMingle</title>
 </head>
 <body>
-    <header >        
+    <header id="head">
+        <a href="#aboutArticle" class="skipLink" tabindex="1">Skip to main content</a>        
         <img src="content/media/logo.png" alt="Mug and Mingle logo" class="logo">        
         <nav class="navTopBar">
             <ul class="navList">
@@ -21,11 +22,11 @@
         </nav>
     </header>
     <main class="main2Columns">
-        <article id="aboutArticle">
-            <h1>Products</h1>        
-                <section class="gallery">
+        <section id="aboutArticle" tabindex="2">
+            <h1 tabindex="-1">Products</h1>        
+                <article class="gallery">
                     <img  src="content/media/pexels-julianemonarifotografia-29359730.jpg" alt="coffee pic" srcset="">
-                    <article>
+                    <div>
                         <h2>Coffee name</h2>
                         <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim.</p>
                         <ul>
@@ -33,11 +34,11 @@
                             <li>Qui minim labore adipisicing minim sint.</li>
                             <li>sint consectetur cupidatat.</li>
                         </ul>
-                    </article>                    
-                </section>
-                <section class="gallery">
+                    </div>                    
+                </article>
+                <article class="gallery">
                     <img  src="content/media/pexels-lood-goosen-508841-1235706.jpg" alt="coffee pic" srcset="">
-                    <article>
+                    <div>
                         <h2>Coffee Name</h2>
                         <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim.</p>
                         <ul>
@@ -45,11 +46,11 @@
                             <li>Qui minim labore adipisicing minim sint.</li>
                             <li>sint consectetur cupidatat.</li>
                         </ul>
-                    </article> 
-                </section>
-                <section class="gallery">
+                    </div> 
+                </article>
+                <article class="gallery">
                     <img  src="content/media/pexels-naderaymanphotography-29392160.jpg" alt="coffee pic" srcset="">
-                    <article>
+                    <div>
                         <h2>Coffee Name</h2>
                         <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim.</p>                    
                         <ul>
@@ -57,11 +58,11 @@
                             <li>Qui minim labore adipisicing minim sint.</li>
                             <li>sint consectetur cupidatat.</li>
                         </ul>
-                    </article> 
-                </section>
-                <section class="gallery">
+                    </div> 
+                </article>
+                <article class="gallery">
                     <img  src="content/media/pexels-chevanon-312418.jpg" alt="coffee pic" srcset="">
-                    <article>
+                    <div>
                         <h2>Coffee Name</h2>
                         <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim.</p>
                         <ul>
@@ -69,11 +70,11 @@
                             <li>Qui minim labore adipisicing minim sint.</li>
                             <li>sint consectetur cupidatat.</li>
                         </ul>
-                    </article> 
-                </section>
-                <section class="gallery">
+                    </div> 
+                </article>
+                <article class="gallery">
                     <img  src="content/media/pexels-julianemonarifotografia-29359730.jpg" alt="coffee pic" srcset="">
-                    <article>
+                    <div>
                         <h2>Coffee Name</h2>
                         <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim.</p>
                         <ul>
@@ -81,11 +82,11 @@
                             <li>Qui minim labore adipisicing minim sint.</li>
                             <li>sint consectetur cupidatat.</li>
                         </ul>
-                    </article> 
-                </section>
-                <section class="gallery">
+                    </div> 
+                </article>
+                <article class="gallery">
                     <img  src="content/media/pexels-julianemonarifotografia-29359730.jpg" alt="coffee pic" srcset="">
-                    <article>
+                    <div>
                         <h2>Coffee Name</h2>
                         <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim.</p>
                         <ul>
@@ -93,13 +94,13 @@
                             <li>Qui minim labore adipisicing minim sint.</li>
                             <li>sint consectetur cupidatat.</li>
                         </ul> 
-                    </article>
-                </section>
+                    </div>
+                </article>
 
-        </article>
+            </section>
 
-        <aside id="productAside">
-            <article class="sideBox">
+        <aside id="productAside" tabindex="3">
+            <article class="sideBox">                
                 <table>
                     <legend>week schedule</legend>
                     <thead>
@@ -151,9 +152,14 @@
     </main>
     <footer>
         <figure class="linkContainer">
-            <a href="https://github.com/kamScripts/">
+            <a href="https://github.com/kamScripts/" tabindex="4">
             <img src="content/media/github-mark.svg" alt="github-mark" height="28px">
-            kamScripts</a>
+            <span class="linkText">kamScripts</span></a>
+        </figure>
+        <figure class="linkContainer">
+            <a href="#head" tabindex="5">
+            <img src="content/media/house-solid.svg" alt="github-mark" height="28px">
+            <span class="linkText">Top of the page</span></a>
         </figure>
     </footer>
 </body>
